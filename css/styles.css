@@ -9,3 +9,13 @@
 @import "./components/event-stages.css";
 @import "./components/event-members.css";
 @import "./components/footer.css";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+}

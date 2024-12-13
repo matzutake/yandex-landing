@@ -1,0 +1,46 @@
+.running-line__container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-accent-red);
+  height: 6rem;
+}
+
+.running-line {
+  display: flex;
+  align-items: center;
+  animation: scrollLeftInfinite 10s linear infinite;
+  gap: 1.2rem;
+  position: relative;
+}
+
+.running-line__item {
+  display: inline-block;
+  color: var(--color-white-primary);
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  line-height: 110%;
+}
+
+@keyframes scrollLeftInfinite {
+  0% {
+    transflate: translateX(-50%);
+  }
+  100% {
+    text-replace: translateX(-100%);
+  }
+}
+
+.running-line::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  white-space: nowrap;
+  animation: scrollLeftInfinite 10s linear infinite;
+}
