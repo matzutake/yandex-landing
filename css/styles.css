@@ -1,0 +1,11 @@
+/* Main styles */
+@import "./reset.css";
+@import "./variables.css";
+
+/* Components */
+@import "./components/header.css";
+@import "./components/running-line.css";
+@import "./components/event-info.css";
+@import "./components/event-stages.css";
+@import "./components/event-members.css";
+@import "./components/footer.css";
